@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard | Referral Portal</title>
     <link rel="icon" href="../assets/general/firstBankFavicon.JPG" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/layout.css" />
@@ -21,10 +21,10 @@
     <div class="flex w-screen h-screen bg-blue-500">
       <!-- sidebar layout container -->
       <aside
-        class="hidden lg:flex flex-col gap-20 w-[260px] bg-[#002855] h-screen justify-start pt-8 pl-8"
+        class="hidden lg:flex flex-col gap-20 w-[260px] bg-[#002855] h-screen justify-start pt-8"
       >
         <!-- first bank logo container -->
-        <a href="/layout">
+        <a href="/layout" class="pl-8">
           <img
             src="../assets/general/firstBankLogo.svg"
             alt="first bank logo"
@@ -33,8 +33,8 @@
           />
         </a>
 
-        <ul class="flex flex-col gap-8">
-          <li class="nav-item active">
+        <ul class="flex flex-col">
+          <li class="nav-item active bg-[#E6B014] border-l-[3px] py-3 pl-8">
             <!-- dashboard link -->
             <a
               class="flex gap-[10px] items-center text-white text-[14px] nav-link"
@@ -52,7 +52,7 @@
             </a>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item active pl-8 py-3">
             <!-- prospects link -->
             <a
               class="flex items-center gap-[10px] text-white text-[14px] nav-link"
@@ -70,7 +70,7 @@
             </a>
           </li>
 
-          <li class="nav-item active circularSTD-font">
+          <li class="nav-item active pl-8 py-3">
             <!-- reports link -->
             <button
               class="flex items-center gap-[14px] text-white text-[14px] nav-link"
@@ -88,7 +88,7 @@
             </button>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item active pl-8 py-3">
             <!-- settings link -->
             <button
               class="flex items-center gap-[10px] text-white text-[14px] nav-link"
@@ -109,10 +109,12 @@
       </aside>
 
       <!-- right layout container -->
-      <section class="flex flex-col w-full bg-[#F0F2FA]">
+      <section
+        class="flex flex-col w-full bg-[#F0F2FA] min-h-screen overflow-y-auto"
+      >
         <!-- RIGHT TOP BAR -->
         <header
-          class="h-[70px] pl-7 pr-10 flex justify-between items-center bg-white"
+          class="py-[10px] pl-7 pr-10 flex justify-between items-center bg-white sticky top-0"
         >
           <!-- search box area -->
           <div
@@ -176,7 +178,7 @@
         </header>
 
         <!-- RIGHT MAIN CONTENT AREA -->
-        <main id="content" class="pl-7 pr-10 pt-6"></main>
+        <main id="content" class="pl-7 pr-10 pt-6 flex-grow mb-10"></main>
       </section>
     </div>
   </body>
